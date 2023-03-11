@@ -16,7 +16,7 @@ import Discription from "./Discription";
 
 const Testimonial = () => {
   return (
-    <div id="Testimonial" className="my-16">
+    <div id="Testimonial" className="bg-white lg:px-52 md:px-14 px-5 my-16">
       <Discription
         name="Client Opinion"
         heading="What Users Say About Us"

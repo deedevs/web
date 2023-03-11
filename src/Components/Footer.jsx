@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <>
       <div className="bg-black lg:px-52 md:px-14 px-5 py-16 text-white">
-        <div className="md:flex justify-between gap-x-5 w-full">
-          <div className="md:w-1/2 p-4 mx-auto text-center md:text-start">
-            <div className="lg:w-[150px] md-w-[80px] h-[150px] mx-auto md:mx-0">
+        <div className="md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-cols-4 xl:grid-rows-1 gap-10 w-full">
+          <div className=" p-4 text-center md:text-start">
+            <div className="lg:w-[250px] md-w-[80px] h-[150px] mx-auto md:mx-0">
               <img
                 src={logo}
                 alt=""
@@ -25,7 +25,7 @@ const Footer = () => {
               Sequi.
             </p>
           </div>
-          <div className="md:w-1/4 p-4">
+          <div className="p-4">
             <h2 className="text-2xl font-semibold mb-2">Navigations</h2>
             <div>
               <FooterLink section="Home" />
@@ -36,29 +36,33 @@ const Footer = () => {
               <FooterLink section="Testinoial" />
             </div>
           </div>
-          <div className="md:w-1/4 p-4">
+          <div className="p-4">
             <h2 className="text-2xl font-semibold mb-2">Contacts</h2>
 
             <ul className="text-lg">
               <li className="py-1">
-                <i className="fa-solid fa-phone py-3 pr-5"></i>
+                <i className="fa-solid fa-phone py-3 pr-5 md:pr-3 lg:pr-5"></i>
                 <span className="py-3">(220) 4555677</span>
               </li>
+              <hr />
               <li className="py-1">
-                <i className="fa-regular fa-envelope py-3 pr-5 "></i>
+                <i className="fa-regular fa-envelope py-3 pr-5 md:pr-3 lg:pr-5 "></i>
                 <span className="py-3">info@renex.org</span>
               </li>
+              <hr />
               <li className="py-1">
-                <i className="fa-regular fa-clock py-3 pr-5"></i>
+                <i className="fa-regular fa-clock py-3 pr-5 md:pr-3 lg:pr-5"></i>
                 <span className="py-3">Mon - Sat: 9:00 - 17:00</span>
               </li>
+              <hr />
               <li className="py-1">
-                <i className="fa-solid fa-location-dot py-3 pr-5"></i>
+                <i className="fa-solid fa-location-dot py-3 pr-5 md:pr-3 lg:pr-5"></i>
                 <span className="py-3">No. 14 Kairaba Avenue</span>
               </li>
+              <hr />
             </ul>
           </div>
-          <div className="md:w-1/4 p-4">
+          <div className="p-4">
             <h2 className="text-2xl font-semibold mb-2">Follow us</h2>
             <div className="">
               <div className="py-3">
