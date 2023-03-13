@@ -7,6 +7,8 @@ const NavItems = ({ className }) => {
     "Features",
     "Process",
     "Services",
+    "Mission",
+    "Our Team",
     "Partners",
     "Testimonial",
   ];
@@ -15,7 +17,7 @@ const NavItems = ({ className }) => {
   return (
     <ul className={className}>
       {navItems.map((item) => (
-        <li key={item} className="ml-5">
+        <li key={item} className="ml-5 cursor-pointer">
           <Link
             to={item}
             spy={true}

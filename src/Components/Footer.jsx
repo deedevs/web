@@ -32,6 +32,8 @@ const Footer = () => {
               <FooterLink section="Features" />
               <FooterLink section="Process" />
               <FooterLink section="Services" />
+              <FooterLink section="Mission" />
+              <FooterLink section="Our Team " />
               <FooterLink section="Partners" />
               <FooterLink section="Testinoial" />
             </div>

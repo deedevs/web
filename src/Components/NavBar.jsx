@@ -16,6 +16,7 @@ const NavBar = ({ open, setOpen }) => {
           <img
             src={open ? closeIcon : openIcon}
             alt={open ? "close menu icon" : "open menu icon"}
+            className="cursor-pointer"
           />
         </div>
 

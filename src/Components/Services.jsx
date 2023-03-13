@@ -12,7 +12,7 @@ const Services = () => {
       <div className="w-full mx-auto">
         <Discription
           name="Our Services"
-          heading="Our ways 0f Transfering Money"
+          heading="Our ways Of Transfering Money"
           message="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
           sequi voluptatem nulla modi nemo explicabo voluptates.
           Voluptatibus, fugit velit, ipsa cumque alias ipsum magnam sed

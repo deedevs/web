@@ -5,7 +5,7 @@ import logo from "../assets/logo.jpeg";
 
 const Team = () => {
   return (
-    <div className="bg-white lg:px-52 md:px-14 px-5 py-16">
+    <div id="Our Team" className="bg-white lg:px-52 md:px-14 px-5 py-16">
       <div className="w-full">
         <Discription
           name="Our Team"

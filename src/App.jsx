@@ -11,6 +11,7 @@ import Team from "./Components/Team";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Mission from "./Components/Mission";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
       <Features />
       <Process />
       <Services />
+      <Mission />
       <Team />
       <Partners />
       <Testimonial />
