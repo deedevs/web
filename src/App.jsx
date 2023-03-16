@@ -26,7 +26,7 @@ function App() {
     });
   }, []);
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden font-poppins">
       <Header />
       <Features />
       <Process />

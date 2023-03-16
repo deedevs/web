@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         teamBg: "url('../assets/teamBg1.jpg')",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
