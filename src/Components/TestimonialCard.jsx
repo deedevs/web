@@ -1,31 +1,28 @@
 import React from "react";
-import logo from "../assets/logo.jpeg";
 
-const TestimonialCard = () => {
+const TestimonialCard2 = ({ image, name, role, comment }) => {
   return (
-    <div className="lg:px-52 md:px-14 px-5 py-8 relative overflow-hidden bg-slate-300">
-      {/* <div className="w-[330px] md:w-[540px] my-16"> */}
-      <div className="relative mb-16">
-        <div className="bg-white rounded-md shadow py-6 px-5 relative mb-14 leading-6 text-base text-gray-500">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sapiente,
-          mollitia optio minima laudantium maiores facilis molestiae voluptas
-          iste cum laboriosam officia eos. Maxime, minima! Perferendis tempora
-          quis provident a!
-        </div>
-        <span className="bg-transparent absolute left-5 top-[210px] md:top-[185px] lg:top-[140px] border-t-[25px] border-t-solid border-t-white border-r-[25px] border-r-solid border-r-transparent border-l-[25px] border-l-solid border-l-transparent"></span>
-        <div className="relative py-4 pl-8 min-h-[70px] flex justify-between items-center">
-          <div className="max-w-[70px] absolute left-0 top-0">
-            <img src={logo} alt="" className=" rounded-full" />
-          </div>
-          <div className="ml-12 absolute top-50">
-            <h2>Peter Junior</h2>
-            <p className="leading-6 text-base text-gray-500">Developer</p>
-          </div>
-        </div>
+    <div className="mt-16 max-w-xl p-8 shadow-md shadow-gray-400">
+      <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] mx-auto ">
+        <img
+          src={image}
+          alt=""
+          srcSet=""
+          className="rounded-full border
+             border-[#daa540] p-2"
+        />
       </div>
+      <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-[#daa540] text-center mt-2">
+        {name}
+      </h3>
+      <span className="text-sm md:text-base lg:text-lg font-medium text-blacktext-center">
+        {role}
+      </span>
+      <p className="leading-6 md:text-base text-sm text-gray-500 mx-auto text-center mt-6">
+        {comment}
+      </p>
     </div>
-    // </div>
   );
 };
 
-export default TestimonialCard;
+export default TestimonialCard2;

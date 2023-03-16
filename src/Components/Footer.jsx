@@ -1,11 +1,11 @@
 import React from "react";
-import FooterCols from "./FooterCols";
-import logo from "../assets/logo.jpeg";
-import { Link } from "react-scroll";
+import logo from "../assets/logo.jpg";
 import FooterLink from "./FooterLink";
+import SocialLink from "./SocialLink";
+import ContactDetail from "./ContactDetail";
+import CopyWrite from "./CopyWrite";
 
 const Footer = () => {
-  const date = new Date().getFullYear();
   return (
     <>
       <div className="bg-black lg:px-52 md:px-14 px-5 py-16 text-white">
@@ -42,61 +42,58 @@ const Footer = () => {
             <h2 className="text-2xl font-semibold mb-2">Contacts</h2>
 
             <ul className="text-lg">
-              <li className="py-1">
-                <i className="fa-solid fa-phone py-3 pr-5 md:pr-3 lg:pr-5"></i>
-                <span className="py-3">(220) 4555677</span>
-              </li>
+              <ContactDetail
+                className="fa-solid fa-phone"
+                contact="(+220) 4555677"
+              />
               <hr />
-              <li className="py-1">
-                <i className="fa-regular fa-envelope py-3 pr-5 md:pr-3 lg:pr-5 "></i>
-                <span className="py-3">info@renex.org</span>
-              </li>
+              <ContactDetail
+                className="fa-regular fa-envelope"
+                contact="info@renex.org"
+              />
               <hr />
-              <li className="py-1">
-                <i className="fa-regular fa-clock py-3 pr-5 md:pr-3 lg:pr-5"></i>
-                <span className="py-3">Mon - Sat: 9:00 - 17:00</span>
-              </li>
+              <ContactDetail
+                className="fa-regular fa-clock"
+                contact="Mon - Sat: 9:00 - 17:00"
+              />
+
               <hr />
-              <li className="py-1">
-                <i className="fa-solid fa-location-dot py-3 pr-5 md:pr-3 lg:pr-5"></i>
-                <span className="py-3">No. 14 Kairaba Avenue</span>
-              </li>
+              <ContactDetail
+                className="fa-solid fa-location-dot"
+                contact="No. 14 Kairaba Avenue"
+              />
               <hr />
             </ul>
           </div>
           <div className="p-4">
             <h2 className="text-2xl font-semibold mb-2">Follow us</h2>
-            <div className="">
-              <div className="py-3">
-                <a href="http://">
-                  <i class="fa-brands fa-twitter fa-1x lg:fa-2x text-blue-600 mr-4"></i>
-                  <span>Twitter</span>
-                </a>
-              </div>
-              <div className="py-3">
-                <a href="http://">
-                  <i class="fa-brands fa-facebook-f fa-1x lg:fa-2x mr-4"></i>
-                  <span>Facebook</span>
-                </a>
-              </div>
-              <div className="py-3">
-                <a href="http://">
-                  <i class="fa-brands fa-youtube fa-1x lg:fa-2x text-red-400 mr-4"></i>
-                  <span>YouTube</span>
-                </a>
-              </div>
-              <div className="py-3">
-                <a href="http://">
-                  <i class="fa-brands fa-instagram fa-1x lg:fa-2x text-pink-200 mr-4"></i>
-                  <span>Instagram</span>
-                </a>
-              </div>
-            </div>
+            <SocialLink
+              domain="twitter.com"
+              iconName="fa-twitter"
+              iconColor="text-blue-400"
+              name="Twitter"
+            />
+            <SocialLink
+              domain="facebook.com"
+              iconName="fa-facebook-f"
+              iconColor="text-blue-500"
+              name="Facebook"
+            />
+            <SocialLink
+              domain="linkedIn.com"
+              iconName="fa-linkedin-in"
+              iconColor="text-blue-500"
+              name="LinkedIn"
+            />
+            <SocialLink
+              domain="instagram.com"
+              iconName="fa-instagram"
+              iconColor="text-red-200"
+              name="Instagram"
+            />
           </div>
         </div>
-        <p className="text-center text-gray-300 pt-14 text-sm lg:text-base">
-          &copy; {date} RenEx Financial Services
-        </p>
+        <CopyWrite />
       </div>
     </>
   );

@@ -5,7 +5,7 @@ const Process = () => {
   return (
     <div
       id="Process"
-      className={`bg-black lg:px-52 md:px-14 px-5 py-16 ${
+      className={`bg-black bg-center lg:px-52 md:px-14 px-5 py-16 ${
         open ? "z-[-2]" : "z-10"
       }`}
     >

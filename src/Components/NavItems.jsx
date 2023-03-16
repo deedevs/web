@@ -12,7 +12,6 @@ const NavItems = ({ className }) => {
     "Partners",
     "Testimonial",
   ];
-  // const [clicked, setClicked] = useState(false);
 
   return (
     <ul className={className}>
@@ -20,12 +19,12 @@ const NavItems = ({ className }) => {
         <li key={item} className="ml-5 cursor-pointer">
           <Link
             to={item}
+            activeClass="active"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-165}
             duration={1000}
             className="hover:text-[#daa520] font-medium"
-            // onClick={() => setClicked(true)}
           >
             {item}
           </Link>

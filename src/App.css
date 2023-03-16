@@ -33,3 +33,39 @@
 .swiper-slide:nth-child(3n) {
   width: 40%;
 }
+
+.active {
+  color: #daa540;
+}
+
+.team {
+  background: url("./assets/teamBg.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+}
+.features {
+  background: url("./assets/featuresBg.jpg");
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: overlay;
+}
+
+.header {
+  background: url("./assets/heroBg.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+}
+.testimonialBg {
+  background: url("./assets/testimonialBg.jpg");
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: overlay;
+}
+.missionBg {
+  background: url("./assets/missionBg.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+.servicesBg {
+  background: url("./assets/serviceBg.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+}

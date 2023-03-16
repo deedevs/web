@@ -1,9 +1,10 @@
 import React from "react";
 import heroImg from "../assets/heroImg.png";
+import Form from "./Form";
 
 const Hero = () => {
   return (
-    <div className={`bg-black lg:px-52 md:px-14 px-5 py-16 rounded-b-[50px]`}>
+    <div className=" lg:px-52 md:px-14 px-5 py-8 h-full">
       <div className="md:flex w-full md:gap-x-24">
         <div className=" md:w-1/2 py-6 text-center md:text-start pt-20">
           <h2 className="text-2xl md:text-4xl lg:text-6xl text-[#daa520] pb-5 capitalize">
@@ -16,13 +17,9 @@ const Hero = () => {
             Discover now
           </button>
         </div>
-        <div className="md:w-1/2 px-14 py-6 my-auto">
+        <div className="px-14 md:px-0 py-6 my-auto h-[500px]">
           <div className="md:w-full mx-auto">
-            <img
-              src={heroImg}
-              alt=""
-              className="lg:w-[550px] md-w-[275px] h-[450px] object-contain"
-            />
+            <Form />
           </div>
         </div>
       </div>

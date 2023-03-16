@@ -7,19 +7,20 @@ import westernUnion from "../assets/westernUnion.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
-// import "swiper/css/pagination";
 
 import "../App.css";
 
-// import required modules
 import { Autoplay } from "swiper";
 import PartnersLogos from "./PartnersLogos";
 
 const Partners = () => {
   return (
-    <div id="Partners" className="bg-black lg:px-52 md:px-14 px-5 py-16">
+    <div
+      id="Partners"
+      className="bg-black lg:px-52 md:px-14 px-5 py-16"
+      color="text-white"
+    >
       <Discription
         name="Our Partners"
         heading="Our Partners Programs"
