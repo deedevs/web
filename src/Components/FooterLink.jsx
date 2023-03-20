@@ -9,7 +9,7 @@ const FooterLink = ({ section }) => {
       smooth={true}
       offset={50}
       duration={1000}
-      className="py-1 block text-lg text-white hover:text-[#daa540]"
+      className="py-1 block text-lg text-white hover:text-[#daa540] cursor-pointer"
     >
       {section}
     </Link>

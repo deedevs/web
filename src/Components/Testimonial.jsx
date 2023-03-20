@@ -1,22 +1,27 @@
-import React, { useRef, useState } from "react";
-import logo from "../assets/logo.jpeg";
-// Import Swiper React components
+import React from "react";
+import TestimonialCard from "./TestimonialCard";
+import Discription from "./Discription";
+import user1 from "../assets/testimonialImg.jpg";
+import user2 from "../assets/testimonialImg1.jpg";
+import user3 from "../assets/testimonialImg2.jpg";
+import user4 from "../assets/testimonialImg3.jpg";
+import user5 from "../assets/testimonialImg4.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 import "../App.css";
 
-// import required modules
 import { Pagination, Autoplay } from "swiper";
-import TestimonialCard2 from "./TestimonialCard2";
-import Discription from "./Discription";
 
 const Testimonial = () => {
   return (
-    <div id="Testimonial" className="my-16">
+    <div
+      id="Testimonial"
+      className="testimonialBg bg-no-repeat bg-cover bg-center lg:px-52 md:px-14 px-5 w-full h-full pt-14 pb-8"
+    >
       <Discription
         name="Client Opinion"
         heading="What Users Say About Us"
@@ -35,30 +40,10 @@ const Testimonial = () => {
         modules={[Pagination, Autoplay]}
         className=".swiper"
       >
-        <SwiperSlide className="z-[1]">
-          <TestimonialCard2
-            image={logo}
-            name="Peter Junior"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
-          />
-        </SwiperSlide>
-        <SwiperSlide className="z-[1]">
-          <TestimonialCard2
-            image={logo}
-            name="David None"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
-          />
-        </SwiperSlide>
-        <SwiperSlide className="z-[1]">
-          <TestimonialCard2
-            image={logo}
-            name="Yuspha Darboe"
+        <SwiperSlide>
+          <TestimonialCard
+            image={user1}
+            name="Jean Johnson"
             role="Developer"
             comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
         aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
@@ -66,8 +51,28 @@ const Testimonial = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <TestimonialCard2
-            image={logo}
+          <TestimonialCard
+            image={user2}
+            name="Alex Smith"
+            role="Developer"
+            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
+        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
+        tempora."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestimonialCard
+            image={user3}
+            name="Mariama Darboe"
+            role="Developer"
+            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
+        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
+        tempora."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestimonialCard
+            image={user4}
             name="Omar Jeng"
             role="Developer"
             comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
@@ -76,8 +81,8 @@ const Testimonial = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <TestimonialCard2
-            image={logo}
+          <TestimonialCard
+            image={user5}
             name="Ousman Touray"
             role="Developer"
             comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
