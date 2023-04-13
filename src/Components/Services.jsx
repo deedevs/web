@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div
       id="Services"
-      className="servicesBg bg-no-repeat bg-cover bg-center text-black lg:px-52 md:px-14 px-5 py-16"
+      className="servicesBg bg-no-repeat bg-cover bg-center text-black lg:px:32 xl:px-52 md:px-14 px-5 py-16"
     >
       <div className="w-full mx-auto">
         <Discription

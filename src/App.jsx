@@ -6,13 +6,11 @@ import Features from "./Components/Features";
 import Footer from "./Components/Footer";
 import Process from "./Components/Process";
 import Partners from "./Components/Partners";
-import GoToTop from "./Components/GoToTop";
 import Team from "./Components/Team";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Mission from "./Components/Mission";
-import Form from "./Components/Form";
 
 function App() {
   useEffect(() => {
@@ -35,7 +33,6 @@ function App() {
       <Team />
       <Partners />
       <Testimonial />
-      <GoToTop />
       <Footer />
     </div>
   );

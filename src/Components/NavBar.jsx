@@ -4,7 +4,7 @@ import NavItems from "./NavItems";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const [bgState, setBgState] = useState("black");
+  // const [bgState, setBgState] = useState("black");
 
   const nav = useRef();
   useEffect(() => {
@@ -17,7 +17,7 @@ const NavBar = () => {
           "w-full",
           "z-[100]"
         );
-        setBgState("white");
+        // setBgState("white");
       } else {
         nav.current.classList.remove(
           "bg-white",
@@ -26,7 +26,7 @@ const NavBar = () => {
           "w-full",
           "z-[100]"
         );
-        setBgState("black");
+        // setBgState("black");
       }
     });
   }, []);
@@ -34,7 +34,7 @@ const NavBar = () => {
   return (
     <nav
       ref={nav}
-      className="py-5 md:px-14 px-5 bg-transparent text-white shadow-md block"
+      className=" md:pr-14 pr-5 bg-white text-black shadow-md block"
     >
       <div className="md:flex items-center justify-between">
         <Logo />
@@ -42,20 +42,21 @@ const NavBar = () => {
           className=" absolute right-6 top-[65px] xl:hidden"
           onClick={() => setOpen(!open)}
         >
+          {/* ${bgState == "white" ? "text-black" : "text-white"} */}
           <i
             className={`fa-solid fa-2x xl:fa-3x cursor-pointer ${
               open ? "fa-xmark" : "fa-bars"
-            } ${bgState == "white" ? "text-black" : "text-white"}`}
+            } `}
           ></i>
         </div>
-
+        {/* ${
+            bgState === "white" ? "bg-white text-black" : "bg-black text-white"
+          } */}
         <NavItems
           className={`xl:flex xl:items-center xl:space-x-5 xl:space-y-0 space-y-4 text-xl
-         xl:pb-0 pb-5 xl:pt-0 pt-8 absolute xl:static xl:z-10 z-[1] left-0 w-full xl:w-auto xl:pl-0 pl-9 xl:mt-0 xl:bg-inherit  transition-all duration-500 ease-in ${
+         xl:pb-0 pb-5 xl:pt-0 pt-8 absolute xl:static xl:z-10 z-[1] left-0 w-full xl:w-auto xl:pl-0 pl-9 xl:mt-0 xl:bg-inherit  transition-all duration-500 ease-in bg-white text-black ${
            open ? "top-[160px] opacity-100 z-[1]" : "top-[-490px]"
-         } ${
-            bgState === "white" ? "bg-white text-black" : "bg-black text-white"
-          }`}
+         } `}
         />
       </div>
     </nav>

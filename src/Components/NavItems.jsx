@@ -2,16 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 const NavItems = ({ className }) => {
-  const navItems = [
-    "Home",
-    "Features",
-    "Process",
-    "Services",
-    "Mission",
-    "Our Team",
-    "Partners",
-    "Testimonial",
-  ];
+  const navItems = ["Home", "Features", "Services", "Send", "Recieve"];
 
   return (
     <ul className={className}>

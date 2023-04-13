@@ -1,10 +1,11 @@
 import React from "react";
-import heroImg from "../assets/heroImg.png";
-import Form from "./Form";
+// import Form from "./Form";
+import Form from "./Form2";
+import Rates from "./Rates";
 
 const Hero = () => {
   return (
-    <div className=" lg:px-52 md:px-14 px-5 py-8 h-full">
+    <div className="header bg-no-repeat bg-cover bg-blend-overlay bg-center lg:px:32 xl:px-52 md:px-14 px-5 py-8 h-full relative">
       <div className="md:flex w-full md:gap-x-24">
         <div className=" md:w-1/2 py-6 text-center md:text-start pt-20">
           <h2 className="text-2xl md:text-4xl lg:text-6xl text-[#daa520] pb-5 capitalize">
@@ -17,12 +18,14 @@ const Hero = () => {
             Discover now
           </button>
         </div>
-        <div className="px-14 md:px-0 py-6 my-auto h-[500px]">
+        <div className=" md:px-0 py-6  h-[500px]">
           <div className="md:w-full mx-auto">
+            {/* <Form /> */}
             <Form />
           </div>
         </div>
       </div>
+      <Rates />
     </div>
   );
 };

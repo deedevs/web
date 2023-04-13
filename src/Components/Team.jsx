@@ -4,14 +4,14 @@ import ceoImg from "../assets/ceo.jpg";
 import directorImg from "../assets/director.jpg";
 import mdImg from "../assets/md.png";
 
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import TeamCard from "./TeamCard";
 
 const Team = () => {
   return (
     <div
       id="Our Team"
-      className="team bg-no-repeat bg-cover bg-center lg:px-52 md:px-14 px-5 py-16 w-full h-full "
+      className="team bg-no-repeat bg-cover bg-center lg:px:32 xl:px-52 md:px-14 px-5 py-16 w-full h-full "
     >
       <div className="w-full">
         <Discription

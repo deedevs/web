@@ -20,7 +20,7 @@ const Testimonial = () => {
   return (
     <div
       id="Testimonial"
-      className="testimonialBg bg-no-repeat bg-cover bg-center lg:px-52 md:px-14 px-5 w-full h-full pt-14 pb-8"
+      className="testimonialBg bg-no-repeat bg-cover bg-center lg:px:32 xl:px-52 md:px-14 px-5 w-full h-full pt-14 pb-8"
     >
       <Discription
         name="Client Opinion"

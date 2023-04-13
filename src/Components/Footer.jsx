@@ -1,14 +1,15 @@
 import React from "react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import FooterLink from "./FooterLink";
 import SocialLink from "./SocialLink";
 import ContactDetail from "./ContactDetail";
 import CopyWrite from "./CopyWrite";
+import GoToTop from "./GoToTop";
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-black lg:px-52 md:px-14 px-5 py-16 text-white">
+      <div className="bg-black lg:px:32 xl:px-52 md:px-14 px-5 py-16 text-white">
         <div className="md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-cols-4 xl:grid-rows-1 gap-10 w-full">
           <div className=" p-4 text-center md:text-start">
             <div className="lg:w-[250px] md-w-[80px] h-[150px] mx-auto md:mx-0">
@@ -95,6 +96,7 @@ const Footer = () => {
         </div>
         <CopyWrite />
       </div>
+      <GoToTop />
     </>
   );
 };

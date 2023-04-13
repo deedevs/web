@@ -5,7 +5,7 @@ const Mission = () => {
   return (
     <div
       id="Mission"
-      className="missionBg bg-no-repeat bg-cover bg-center lg:px-52 md:px-14 px-5 py-16"
+      className="missionBg bg-no-repeat bg-cover bg-center lg:px:32 xl:px-52 md:px-14 px-5 py-16"
     >
       <div className="p-4 md:flex md:items-center">
         <div className="w-full text-white text-center md:text-start">

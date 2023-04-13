@@ -3,7 +3,7 @@ import { FeaturesCard } from "./FeaturesCard";
 const Features = () => {
   return (
     <div
-      className="features bg-no-repeat bg-cover bg-blend-overlay bg-center text-black lg:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="features bg-no-repeat bg-cover bg-blend-overlay bg-center text-black lg:px:32 xl:px-52 md:px-14 px-5 pt-14 pb-24"
       id="Features"
     >
       <div className="md:flex w-full justify-between ">

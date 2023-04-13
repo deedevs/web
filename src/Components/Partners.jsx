@@ -18,7 +18,7 @@ const Partners = () => {
   return (
     <div
       id="Partners"
-      className="bg-black lg:px-52 md:px-14 px-5 py-16"
+      className="bg-black lg:px:32 xl:px-52 md:px-14 px-5 py-16"
       color="text-white"
     >
       <Discription
@@ -29,7 +29,6 @@ const Partners = () => {
         iste cum laboriosam officia eos. Maxime, minima! Perferendis tempora
         quis provident"
       />
-
       <Swiper
         slidesPerView={"3"}
         spaceBetween={10}
